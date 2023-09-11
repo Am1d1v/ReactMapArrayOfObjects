@@ -1,16 +1,12 @@
-import { useState } from 'react';
 import './App.css';
-import Person from './components/Person';
-import persons from './Data/Persons'
+import Persons from './components/Persons';
 
 function App() {
 
 
   return (
-    <div className="App">
-      {persons.map((person, index) => {
-        return <Person {...person} key={index}/>
-      })}
+    <div>
+      <Persons />
     </div>
   );
 }
