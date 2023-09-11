@@ -1,5 +1,9 @@
-.App {
-  text-align: center;
+
+.App{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 15px;
 }
 
 button{

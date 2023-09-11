@@ -1,11 +1,17 @@
+import './Person.css'
 
 
-function Person(){
+function Person(props){
+
+    const {firstName, id} = props
 
     return(
-        <div>
-            <h1>Person</h1>
+        
+         <div className='person-card'>
+                <h1>Name: {firstName}</h1>
+                <h2>ID: {id}</h2>
         </div>
+        
     )
 }
 

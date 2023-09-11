@@ -8,8 +8,8 @@ function App() {
 
   return (
     <div className="App">
-      {persons.map((person) => {
-        return <h1>{person.firstName}</h1>
+      {persons.map((person, index) => {
+        return <Person {...person} key={index}/>
       })}
     </div>
   );
